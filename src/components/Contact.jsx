@@ -6,6 +6,7 @@ import { styles } from '../styles'
 import { EarthCanvas } from './canvas'
 import { SectionWrapper } from '../hoc'
 import { slideIn } from '../utils/motion'
+import { error } from 'tilt/lib/router'
 
 const Contact = () => {
   const [form, setForm] = useState({
@@ -18,9 +19,25 @@ const Contact = () => {
 
   const formRef = useRef()
 
-  const handleChange = (e) => { }
+  const handleChange = (e) => {
+    const {name, value} = e.target
+    setForm({...form, [name]: value})
+   }
 
-  const handleSubmit = (e) => { }
+  const handleSubmit = (e) => { 
+    e.preventDefault()
+      alert('Thank you!')
+      setLoading(false)
+      setForm({
+        name: '',
+        email: '',
+        message: ''
+      }, error => {
+        setLoading(false)
+        console.log(error)
+        alert('Something went wrong, please try again.')
+      })
+  }
 
   return (
     <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>

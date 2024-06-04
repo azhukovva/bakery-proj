@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 import { styles } from '../styles'
@@ -10,7 +10,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}>
+    <nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-[#95AD63]`}>
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link to="/"
           className='flex items-center gap-2'
@@ -19,18 +19,20 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}>
           <img src={logo} alt="logo" className='w-9 h-9 object-contain' />
+
           <p className='text-white text-[18px] font-bold cursor-pointer flex'>
-            Aryna Zhukava &nbsp;
-            <span className='sm:block hidden'>| Front-End Developer & Graphic Designer</span>
+            Le Doux &nbsp;
+            <span className='sm:block hidden'>| Pastry & Coffee</span>
           </p>
+
         </Link>
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {/* For each Link component in navLinks, 
           render a list item with a link to the corresponding id */}
           {navLinks.map((Link) => (
             <li key={Link.id}
-              className={`${active === Link.title ? 'text-white' : 'text-secondary'}
-             hover:text-white text-[18px] font-medium cursor-pointer`}
+              className={`${active === Link.title ? 'text-[#FFC0ED]' : 'text-secondary'}
+             hover:text-[#FFC0ED] text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(Link.title)}>
               <a href={`#${Link.id}`}>{Link.title}</a>
             </li>

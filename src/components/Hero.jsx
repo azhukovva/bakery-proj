@@ -2,30 +2,24 @@ import React from 'react'
 import { motion } from 'framer-motion'
 
 import { styles } from '../styles'
-import { ComputersCanvas } from './canvas'
 
 const Hero = () => {
   return (
     <section className='relative w-full h-screen mx-auto'>
       {/* inset-0 is a shorthand for setting top-0, right-0, bottom-0, and left-0 all at once. */}
       <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
-        <div className='flex flex-col justify-center items-center mt-5'>
-          <div className='w-5 h-5 rounded-full bg-[#915eff]' />
-          <div className='w-1 sm:h-80 h-40 violet-gradient' />
-        </div>
-
-        {/* Text */}
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>Hi, I'm <span className='text-[#915eff]'>Aryna</span>
+          <h1 className={`${styles.heroHeadText} text-[#CFEC94]`}>
+            Le Doux
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop websites and web applications.<br />Elegant and user-friendly.
+          Exquisite Pastries & Baked Goods<br />Made with tendresse.
           </p>
         </div>
       </div>
 
       {/* Graphics */}
-      <ComputersCanvas />
+      {/* <ComputersCanvas /> */}
 
       {/* absolute = positioning in the middle */}
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>

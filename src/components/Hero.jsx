@@ -9,7 +9,7 @@ const Hero = () => {
       {/* inset-0 is a shorthand for setting top-0, right-0, bottom-0, and left-0 all at once. */}
       <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
         <div>
-          <h1 className={`${styles.heroHeadText} text-[#CFEC94]`}>
+          <h1 className={`${styles.heroHeadText} text-[#CFEC94] hover:text-[#FFC0ED] transition duration-500 cursor-pointer`} tabIndex="0">
             Le Doux
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>

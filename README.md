@@ -1,7 +1,4 @@
-# Getting Started with Create React App
-
 # Landing page with using 3D graphics and animations
-
 ## Tools
 ### ThreeJS 
 a powerful 3D graphics library for rendering and animating the 3D model

@@ -78,7 +78,9 @@ const experiences = [
     iconBg: "#F5F5F5",
     date: "Jan 2023 - Present",
     points: [
-      ""
+      "And it certainly didn't end there. We immediately started working on the possibility of baking our pastries in Prague. You often came to us from far away, so we wanted to meet you.",
+      "From November 2022, we will be baking in Prague in Smíchov, right next to the bus stop and Klamovka Park. Here you will also be able to look directly into the production and have a great coffee.", 
+      "We've come a long way since the garage and the first breads at Mozolky. We are grateful that you are with us. We are constantly working to make you happy with us. And whether you walk away from the window or the counter, you'll always leave with a smile and come back with one. Thank you all for allowing us to keep telling this story. ♥︎"
     ],
   },
 ];

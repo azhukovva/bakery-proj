@@ -43,14 +43,14 @@ const Navbar = () => {
           <img src={toggle ? close : menu} alt="menu" className='w-[28px] h-[28px] object-contain cursor-pointer'
             onClick={() => setToggle(!toggle)} />
 
-          <div className={`${!toggle ? 'hidden' : 'flex'} p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
+          <div className={`${!toggle ? 'hidden' : 'flex'} p-8 bg-primary absolute top-20 right-0 mx-4 my-2 min-w-[180px] z-10 rounded-xl`}>
             <ul className='list-none flex justify-end items-start flex-col gap-4'>
               {/* For each Link component in navLinks, 
           render a list item with a link to the corresponding id */}
               {navLinks.map((Link) => (
                 <li key={Link.id}
                   className={`${active === Link.title ? 'text-white' : 'text-secondary'}
-             font-poppins font-medium cursor-pointer text-[16px]`}
+             font-poppins font-medium cursor-pointer text-[20px]`}
                   onClick={() => {
                     setToggle(!toggle) // Automatically close the menu when a link is clicked
                     setActive(Link.title)
